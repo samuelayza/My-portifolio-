@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samuel Ayza - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Samuel<span>.</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home reveal">
+        <div class="home-content">
+            <img src="samuel.jpg" alt="Samuel Ayza" class="profile-img" />
+            <h1>Hello, I'm <span>Samuel Ayza</span></h1>
+            <p>Computer Science Student</p>
+            <div class="social-icons">
+                <a href="https://github.com/samuelayza" target="_blank">GitHub</a>
+                <a href="https://t.me/samiyeenatulij" target="_blank">Telegram</a>
+            </div>
+            <button onclick="scrollToSection('contact')">get Me</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about reveal">
+        <h2>About Me</h2>
+        <p>I am a computer science student in wachemo university.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills reveal">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects reveal">
+        <h2>Projects</h2>
+        <div class="project-card">registration form</div>
+        <div class="project-card">Personal Portfolio</div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact reveal">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
